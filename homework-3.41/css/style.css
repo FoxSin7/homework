@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.fielsend-one, .fielsend-two {
+  max-width: 400px;
+  border-radius: 10px;
+  margin: 0;
+  border-collapse: collapse;
+    padding: 0 10px;
+}
+
+.fielsend-one {
+  border-radius: 10px 10px 0px 0px;
+  border-bottom: 0;
+}
+
+label {
+  display: block;
+
+}
+
+.inpet-one {
+  border-radius: 6px;
+  border: 1px solid #333;
+  margin: 5px 5px 9px;
+  padding: 5px 13px;
+  min-width: 300px;
+}
+
+.name-colon, .title-h2  {
+  display: block;
+  font-weight: 400;
+  margin: 0 5px;
+  font-size: medium;
+}
+
+.fielsend-two {
+  padding-top: 0;
+  border-top: 0;
+  border-radius: 0px 0px 10px 10px;
+}
+
+textarea {
+  resize: vertical;
+  width: 300px;
+  min-height: 24px;
+  max-height: 100px;
+  border-radius: 6px;
+  margin: 5px 3px 7px;
+  padding: 5px 13px;
+  border: 1px solid #333;
+}
+
+.check-text {
+  display: inline;
+  font-size: small;
+  font-weight: 500;
+}
+
+#check {
+  cursor: pointer;
+  border-width: 1px;
+}
+
+.send {
+  border-width: 0;
+  display: block;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 4px 16px;
+  margin: 5px 0 10px;
+  box-shadow: 5px;
+}

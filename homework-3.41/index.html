@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Домашнаяя работа 3.40</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <h1>Домашняя работа поля ввода.</h1>
+  <form>
+    <fieldset class="fielsend-one">
+      <h2 class="title-1">Ваши личные данные</h2>
+      <label>
+        <div class="name-colon">Ваше имя</div>
+        <input class="inpet-one" type="text" name="name" placeholder="Имя" required>
+      </label>
+      <label>
+        <div class="name-colon">Ваш возраст</div>
+        <input class="inpet-one" type="number" name="date" placeholder="Возраст" required>
+      </label>
+      <label>
+        <div class="name-colon">Ваш номер телефона</div>
+        <input class="inpet-one" type="tel" name="tel" inputmode="tel" placeholder="Номер телефона" required>
+      </label>
+      <label>
+        <div class="name-colon">Ваша почта</div>
+        <input class="inpet-one" type="email" name="email" inputmode="email" placeholder="Почта" required>
+      </label>
+    </fieldset>
+    <fieldset class="fielsend-two">
+          <h2 class="title-h2">Сообщение</h2>
+        <textarea name="textarea" id="" placeholder="Ваше обращение" required></textarea>
+      <div><input id="check" type="checkbox" name="sogl" required value="imd"> <div class="check-text">Я принимаю правила</div></div>
+      <button class="send">Отправить</button>
+    </fieldset>
+  </form>
+</body>
+
+</html>
