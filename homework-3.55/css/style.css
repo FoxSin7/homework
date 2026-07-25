@@ -1,0 +1,44 @@
+html * {
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 15px;
+  border-bottom: 1px solid #000;
+}
+
+.flex-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  gap: 15px;
+}
+
+/* a {
+  text-decoration: none;
+} */
+
+.link {
+color: #000;
+}
+
+.tel {
+  text-decoration: none;
+  color: #000;
+  padding-right: 10px;
+}
