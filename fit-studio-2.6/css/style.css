@@ -1,0 +1,137 @@
+.common-next {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.hero {
+  position: relative;
+  padding-top: 80px;
+  margin-bottom: 140px;
+}
+
+.hero-flex-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: url(../images/long-decore.svg) repeat-x;
+  width: 100%;
+  height: 48px;
+  bottom: 106px;
+}
+
+.hero-text {
+  position: relative;
+}
+
+.hero-text h1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 62px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+  margin-bottom: 40px;
+}
+
+.hero-text h1 strong {
+  color: #3596ed;
+}
+
+.hero-text p {
+  max-width: 440px;
+}
+
+.hero-button {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #3596ed;
+}
+
+.hero-button {
+  padding: 19px 32px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  transition: opacity 0.2s;
+}
+
+.hero-button:hover {
+  opacity: 0.85;
+}
+
+.hero-img {
+  position: relative;
+  width: 100%;
+}
+
+.hero-choose {
+  max-width: 161px;
+  color: #2c332f;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  padding: 22px;
+  border: 1px solid #535755;
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+
+.last-news h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+  margin-bottom: 40px;
+}
+
+.news-flex {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 28px;
+}
+
+.news-card-border {
+  border: 1px solid #d3cbd9;
+  background: #fff;
+}
+
+
+
+.news-card-text {
+  border: 0px;
+  padding: 20px;
+}
+
+.news-flex div time {
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #858e8a;
+}
+
+.news-flex div p {
+color: #2c332f;
+margin-top: 8px;
+margin-bottom: 12px;
+}
+
+.news-flex div a {
+  color: #3596ed;
+}
