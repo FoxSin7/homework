@@ -1,0 +1,144 @@
+.common-next {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.hero {
+  position: relative;
+  padding-top: 80px;
+  margin-bottom: 140px;
+}
+
+.hero-flex-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: url(../images/long-decore.svg) repeat-x;
+  width: 100%;
+  height: 48px;
+  bottom: 106px;
+}
+
+.hero-text {
+  position: relative;
+}
+
+.hero-text h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 62px;
+}
+
+.hero-text h1 strong {
+  color: #3596ed;
+}
+
+.hero-text p {
+  max-width: 440px;
+}
+
+.hero-button {
+  padding: 19px 32px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  transition: opacity 0.2s;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #3596ed;
+}
+
+.hero-button:hover {
+  opacity: 0.85;
+}
+
+.hero-img {
+  position: relative;
+  width: 100%;
+}
+
+.hero-choose {
+  max-width: 161px;
+  color: #2c332f;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  padding: 22px;
+  border: 1px solid #535755;
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+
+.last-news h2 {
+  margin-bottom: 40px;
+}
+
+.news-flex {
+  display: flex;
+  gap: 28px;
+}
+
+.news-article {
+  display: flex;
+  flex-direction: column;
+  max-width: 284px;
+  background-color: #fff;
+  border: 1px solid #d3cbd9;
+  overflow: hidden;
+}
+
+.news-article img {
+  display: block;
+}
+
+.news-info {
+  padding: 20px 20px 0;
+  margin-bottom: 12px;
+}
+
+.news-date {
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.news-text {
+  color: #2c332f;
+}
+
+.news-article footer {
+  padding: 0px 20px 20px;
+}
+
+.news-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #3596ed;
+}
+
+.news-link::after {
+  margin-top: 3px;
+  display: inline-block;
+  content: "";
+  width: 21px;
+  height: 8px;
+  transition: transform 0.2s;
+  background-image: url(../images/link-pointer.svg);
+}
+
+.news-link:hover::after {
+  transform: translateX(5px);
+}
