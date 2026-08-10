@@ -1,0 +1,114 @@
+html {
+  font-family: Ubuntu, sans-serif;
+  font-weight: 400;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+button, a {
+  outline: none;
+}
+
+button {
+  background-color: #3596ed;
+  transition: background-color 0.2s;
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 2px solid #3596ed;
+  outline-offset: 2px;
+}
+
+button:not(:disabled):active {
+  background-color: #2f85d0;
+}
+
+button:hover {
+  background-color: #39a2ff;
+}
+
+button:disabled {
+  opacity: 0.5;
+}
+
+button:disabled,
+button:disabled:hover {
+  border: none;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.title-large {
+  font-size: 48px;
+  font-family: "Oswald";
+  font-weight: 600;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+}
+
+.title-medium {
+  font-size: 36px;
+  font-weight: 600;
+  font-family: "Oswald";
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+}
+
+.title-mini {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #535755;
+}
+
+.section {
+  margin-bottom: 140px;
+}
+
+.text-sub {
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #858e8a;
+}
