@@ -1,0 +1,349 @@
+.hero {
+  position: relative;
+  padding-top: 80px;
+}
+
+.hero-flex-box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 28px;
+}
+
+.hero::before {
+  width: 100%;
+  height: 48px;
+  bottom: 106px;
+}
+
+.hero-text {
+  max-width: 492px;
+  position: relative;
+}
+
+.hero-text h1 {
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 40px;
+  font-size: 62px;
+}
+
+.hero-text h1 strong {
+  color: #3596ed;
+}
+
+.hero-text p {
+  max-width: 440px;
+  margin-bottom: 140px;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 19px 32px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  -webkit-transition: background-color 0.2s, opacity 0.2s;
+  transition: background-color 0.2s, opacity 0.2s;
+  background: #3596ed;
+}
+
+.hero-button:hover {
+  opacity: 0.85;
+}
+
+.hero-img {
+  position: relative;
+}
+
+.hero-choose {
+  max-width: 161px;
+  color: #2c332f;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 2;
+  padding: 22px;
+  border: 1px solid #535755;
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+
+
+
+.last-news h2 {
+  margin-bottom: 40px;
+}
+
+.news-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 28px;
+}
+
+.news-article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 284px;
+  background-color: #fff;
+  border: 1px solid #d3cbd9;
+  overflow: hidden;
+}
+
+.news-article img {
+  display: block;
+}
+
+.news-info {
+  padding: 20px 20px 0;
+  margin-bottom: 12px;
+}
+
+.news-date {
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.news-text {
+  color: #2c332f;
+}
+
+.news-article footer {
+  padding: 0px 20px 20px;
+}
+
+.news-link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  color: #3596ed;
+}
+
+.news-link::after {
+  margin-top: 3px;
+  display: inline-block;
+  content: "";
+  width: 21px;
+  height: 8px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  background-image: url(../images/svg-decore/link-pointer.svg);
+}
+
+.news-link:hover::after {
+  -webkit-transform: translateX(5px);
+      -ms-transform: translateX(5px);
+          transform: translateX(5px);
+}
+
+.faq {
+  position: relative;
+}
+
+.faq::before {
+  top: 215px;
+}
+
+.faq h2 {
+  margin-bottom: 40px;
+}
+
+.faq-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 28px;
+}
+
+.vopros {
+  display: inline-block;
+  max-width: 700px;
+}
+
+details {
+  border-block: 1px solid #d3cbd9;
+  margin-bottom: 20px;
+}
+
+details:last-child {
+  margin-bottom: 0px;
+}
+
+details>p {
+  padding: 0 20px 20px;
+}
+
+summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+  list-style: none;
+  padding: 20px;
+  cursor: pointer;
+}
+
+summary::after {
+  display: inline-block;
+  content: "";
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 17px;
+  height: 22px;
+  background: url(../images/svg-decore/arrow.svg) no-repeat center / cover;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+details[open] summary::after {
+  -webkit-transform: rotate(0);
+      -ms-transform: rotate(0);
+          transform: rotate(0);
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+
+@media (width <=1400px) {
+  .hero-img img {
+    max-width: 100%;
+    height: 513px;
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+}
+
+@media (width <=992px) {
+  .hero-flex-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .hero::after {
+    display: none;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-img img {
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+
+  .hero-text h1 {
+    font-size: 52px;
+    margin-bottom: 30px;
+  }
+
+  .hero-text p {
+    max-width: inherit;
+    margin-bottom: 30px;
+  }
+
+  .news-flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .news-article {
+    max-width: 350px;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    gap: 20px;
+  }
+
+  .news-article img {
+    width: 100%;
+  }
+
+  .faq::before {
+    display: none;
+  } 
+  
+  .faq-flex {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  }
+}
+
+@media (width <=768px) {
+  .hero-text h1 {
+    font-size: 50px;
+  }
+
+  .news-article {
+    max-width: 400px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  }
+}
+
+@media (width <=576px) {
+  .hero {
+    padding-top: 60px;
+  }
+
+  .hero-text h1 {
+    font-size: 52px;
+  }
+
+  .hero-text {
+    max-width: 410px;
+  }
+
+  .hero-choose {
+    font-size: 14px;
+    padding: 10px;
+    max-width: 125px;
+  }
+} 
