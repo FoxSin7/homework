@@ -1,0 +1,145 @@
+.article {
+  padding-top: 80px;
+  margin-bottom: 120px;
+}
+
+.article__title {
+  max-width: 596px;
+}
+
+.mb-80 {
+  margin-bottom: 40px;
+}
+
+.article__text {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #535755;
+}
+
+.article__text:last-child {
+  margin-bottom: 0;
+}
+
+.mb-140 {
+  margin-bottom: 80px;
+}
+
+.article__decor-wrapper {
+  position: relative;
+}
+
+.article__decor-wrapper--top-left::before {
+  top: 100px;
+  left: 0;
+}
+
+.article__decor-wrapper--bottom-right::before {
+  bottom: 136px;
+  right: 0;
+}
+
+.article__title-medium {
+  max-width: 596px;
+}
+
+.article__list {
+  margin-top: 0;
+  padding-left: 0px;
+  list-style: none;
+}
+
+.article__item::before {
+  display: inline-block;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #3596ed;
+  border-radius: 50%;
+}
+
+.article__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+
+.article__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.video__play-button {
+  width: 60px;
+  height: 60px;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  border: none;
+  border-radius: 100%;
+  padding: 0;
+  cursor: pointer;
+}
+
+.play-button {
+  -webkit-transform: translateX(1px);
+      -ms-transform: translateX(1px);
+          transform: translateX(1px);
+}
+
+@media (width <=768px) {
+  .article__decor-wrapper::before {
+    display: none;
+  }
+}
+
+@media (width <= 576px) {
+  .article {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  .article__title-medium {
+    font-size: 28px;
+  }
+
+  .mb-140 {
+  margin-bottom: 40px;
+  }
+
+  .mb-80 {
+    margin-bottom: 30px;
+  }
+
+  .video__play-button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .play-button{
+    width: 18px;
+    height: 18px;
+  }
+}
