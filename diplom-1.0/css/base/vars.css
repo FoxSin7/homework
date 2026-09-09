@@ -1,0 +1,28 @@
+:root {
+  /* fonts */
+  --font-family: "Inter", sans-serif;
+  --second-family: "Integral", sans-serif;
+
+  /* color */
+  --main-color: #fff;
+  --accent-color: #000;
+  --accent-link-color: #6d5656;
+  --second-link-color: #a7a7a7;
+  --bg-color: #000;
+  --header-bg-color: #f0f0f0;
+  --shadow-color: #181817;
+
+  /* transition */
+  --transition-time: 0.2s;
+
+/* z-index */
+--layer-negative: -1;
+--layer-1: 1;
+--layer-2: 2;
+--layer-3: 3;
+--layer-4: 4;
+
+
+
+
+}
