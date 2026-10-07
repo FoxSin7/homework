@@ -1,0 +1,681 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop.Co</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <script defer src="./js/index.js" type="module"></script>
+    <link rel="shortcut icon" href="./icons/favicon.png" type="image/png" />
+  </head>
+
+  <body class="page__body">
+    <header class="header">
+      <div class="header__discount-pop-up">
+        <div class="container discount__container">
+          <p class="discount__text">
+            Зарегестрируйтесь и получите скидку 20% на первую покупку.
+          </p>
+          <a class="discount__link" href="#">Зарегестрироваться сейчас</a>
+          <button class="discount__close-button">
+            <svg width="20" height="20">
+              <use
+                class="discount__cross"
+                href="./icons/header-sprite.svg#cross"
+              ></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="header__container container">
+        <button
+          class="header__burger burger"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+          aria-controls="header__menu"
+        >
+          <svg class="burger__box-icon" width="24" height="24">
+            <use
+              class="burger__icon-menu"
+              href="./icons/header-sprite.svg#burger-menu"
+            ></use>
+            <use
+              class="burger__icon-cross"
+              href="./icons/header-sprite.svg#cross"
+            ></use>
+          </svg>
+        </button>
+        <a class="logo header__logo" href="#">SHOP.CO</a>
+        <nav
+          class="menu burger__menu header__menu"
+          id="header__menu"
+          aria-label="Главное меню"
+        >
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#shop" class="menu__link"
+                >Магазин
+                <svg width="16" height="16">
+                  <use
+                    class="item__arrow--down header__actions-icon"
+                    href="./icons/header-sprite.svg#arrow-down"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#discounts" class="menu__link">Скидки</a>
+            </li>
+            <li class="menu__item">
+              <a href="#new-arrivals" class="menu__link">Новые поступления</a>
+            </li>
+            <li class="menu__item">
+              <a href="#brends" class="menu__link">Бренды</a>
+            </li>
+          </ul>
+        </nav>
+        <form role="search" method="get" action="/search" class="search">
+          <input
+            class="search__input"
+            type="search"
+            placeholder="Искать товары..."
+          />
+          <svg class="search__icon" width="24" height="24">
+            <use
+              class="header__actions-icon"
+              href="./icons/header-sprite.svg#search"
+            ></use>
+          </svg>
+        </form>
+
+        <div class="header__controls">
+          <a class="control__buttons search__icon--button" href="#">
+            <svg class="" width="24" height="24">
+              <use
+                class="header__actions-icon"
+                href="./icons/header-sprite.svg#search"
+              ></use>
+            </svg>
+          </a>
+          <a class="control__buttons" href="#">
+            <svg width="24" height="24">
+              <use
+                class="header__actions-icon"
+                href="./icons/header-sprite.svg#basket"
+              ></use>
+            </svg>
+          </a>
+          <a class="control__buttons" href="#">
+            <svg width="24" height="24">
+              <use
+                class="header__actions-icon"
+                href="./icons/header-sprite.svg#profile"
+              ></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero section">
+        <div class="hero-container">
+          <h1 class="hero__title text-heavy">
+            НАЙДИ ОДЕЖДУ КОТОРАЯ ВЫРАЗИТ ТВОЙ СТИЛЬ
+          </h1>
+          <p class="hero__text text-mini">
+            Просмотрите наш набор тщательно сделанной одежды, созданный чтобы
+            подчеркнуть ваш индивидуальный стиль.
+          </p>
+          <a class="hero__button" href="#">Купить сейчас</a>
+          <div class="hero__list list__text">
+            <p class="hero__item hero__item--first">
+              <strong class="item__focus">200+</strong><br />
+              Всемирных брендов
+            </p>
+            <div class="item__border"></div>
+            <p class="hero__item">
+              <strong class="item__focus">2,000+</strong><br />
+              Качественных товаров
+            </p>
+            <div class="item__border item__border--last"></div>
+            <p class="hero__item">
+              <span class="item__focus">30,000+</span><br />
+              Счастливых клиентов
+            </p>
+          </div>
+        </div>
+        <div class="hero__image-wrapper">
+          <img
+            src="./images/hero__image--pc.png"
+            alt=""
+            height="663"
+            width="620"
+          />
+        </div>
+      </section>
+      <section id="brends" class="section brands">
+        <div class="brands__wrapper">
+          <svg class="brands__item brands__versace">
+            <use href="./icons/hero-sprite.svg#versace"></use>
+          </svg>
+          <svg class="brands__item brands__zara">
+            <use href="./icons/hero-sprite.svg#zara"></use>
+          </svg>
+          <svg class="brands__item brands__gucci">
+            <use href="./icons/hero-sprite.svg#gucci"></use>
+          </svg>
+          <svg class="brands__item brands__prada">
+            <use href="./icons/hero-sprite.svg#prada"></use>
+          </svg>
+          <svg class="brands__item brands__klein">
+            <use href="./icons/hero-sprite.svg#klein"></use>
+          </svg>
+        </div>
+      </section>
+      <section id="new-arrivals" class="section arrivals">
+        <div class="container arrivals__container">
+          <h2 class="arrivals__title title-lg">НОВЫЕ ПОСТУПЛЕНИЯ</h2>
+          <div class="arrivals__cards">
+            <article class="arrivals__article">
+              <header class="article__header">
+                <picture>
+                  <source srcset="./images/arrivals-1.avif" type="image/avif" />
+                  <img
+                    src="./images/arrivals-1.png"
+                    width="295"
+                    height="298"
+                    class="article__img"
+                    alt="Футболка с лентой"
+                  />
+                </picture>
+              </header>
+              <footer>
+                <p class="article__name text-regular--light">
+                  Футболка с лентой
+                </p>
+                <div class="article__ratings">
+                  <div class="ratings__star-wrapper">
+                    <svg class="ratings__star">
+                      <use href="./icons/arrivals-sprite.svg#star"></use>
+                    </svg>
+                    <svg class="ratings__star">
+                      <use href="./icons/arrivals-sprite.svg#star"></use>
+                    </svg>
+                    <svg class="ratings__star">
+                      <use href="./icons/arrivals-sprite.svg#star"></use>
+                    </svg>
+                    <svg class="ratings__star">
+                      <use href="./icons/arrivals-sprite.svg#star"></use>
+                    </svg>
+                    <svg class="ratings__half-a-star">
+                      <use href="./icons/arrivals-sprite.svg#half-a-star"></use>
+                    </svg>
+                  </div>
+                  <p class="ratings__num text-mini--mini">
+                    4.5/<span class="ratings__num--novisible">5</span>
+                  </p>
+                </div>
+                <div class="article__price">
+                  <p class="text-regular--regular">₽5000</p>
+                </div>
+              </footer>
+            </article>
+            <article class="arrivals__article">
+              <header class="article__header">
+                <picture>
+                  <source srcset="./images/arrivals-2.avif" type="image/avif" />
+                  <img
+                    src="./images/arrivals-2.png"
+                    width="295"
+                    height="298"
+                    class="article__img"
+                    alt="Узкие джинсы"
+                  />
+                </picture>
+              </header>
+              <footer>
+                <p class="article__name text-regular--light">Узкие джинсы</p>
+                <div class="article__ratings">
+                  <div class="ratings__star-wrapper">
+                    <svg class="ratings__star">
+                      <use href="./icons/arrivals-sprite.svg#star"></use>
+                    </svg>
+                    <svg class="ratings__star">
+                      <use href="./icons/arrivals-sprite.svg#star"></use>
+                    </svg>
+                    <svg class="ratings__star">
+                      <use href="./icons/arrivals-sprite.svg#star"></use>
+                    </svg>
+                    <svg class="ratings__half-a-star">
+                      <use href="./icons/arrivals-sprite.svg#half-a-star"></use>
+                    </svg>
+                  </div>
+                  <p class="ratings__num text-mini--mini">
+                    3.5/<span class="ratings__num--novisible">5</span>
+                  </p>
+                </div>
+                <div class="article__price">
+                  <p class="text-regular--regular article__dscount-price">
+                    ₽5000 <span class="discount-prise op-04">₽6000</span>
+                    <span class="discount-percentage">-20%</span>
+                  </p>
+                </div>
+              </footer>
+            </article>
+            <article class="arrivals__article arrivals__article--3">
+              <header class="article__header">
+                <picture>
+                  <source srcset="./images/arrivals-3.avif" type="image/avif" />
+                  <img
+                    src="./images/arrivals-3.png"
+                    width="295"
+                    height="298"
+                    class="article__img"
+                    alt="Клетчатая рубашка"
+                  />
+                </picture>
+              </header>
+              <footer class="article__footer">
+                <p class="article__name text-regular--light">
+                  Клетчатая рубашка
+                </p>
+                <div class="article__ratings">
+                  <div class="ratings__star-wrapper">
+                    <svg class="ratings__star">
+                      <use href="./icons/arrivals-sprite.svg#star"></use>
+                    </svg>
+                    <svg class="ratings__star">
+                      <use href="./icons/arrivals-sprite.svg#star"></use>
+                    </svg>
+                    <svg class="ratings__star">
+                      <use href="./icons/arrivals-sprite.svg#star"></use>
+                    </svg>
+                    <svg class="ratings__star">
+                      <use href="./icons/arrivals-sprite.svg#star"></use>
+                    </svg>
+                    <svg class="ratings__half-a-star">
+                      <use href="./icons/arrivals-sprite.svg#half-a-star"></use>
+                    </svg>
+                  </div>
+                  <p class="ratings__num text-mini--mini">
+                    4.5/<span class="ratings__num--novisible">5</span>
+                  </p>
+                </div>
+                <div class="article__price">
+                  <p class="text-regular--regular">₽7000</p>
+                </div>
+              </footer>
+            </article>
+            <article class="arrivals__article arrivals__article--4">
+              <header class="article__header">
+                <picture>
+                  <source srcset="./images/arrivals-4.avif" type="image/avif" />
+                  <img
+                    src="./images/arrivals-4.png"
+                    width="295"
+                    height="298"
+                    class="article__img"
+                    alt="Футболка с полосами"
+                  />
+                </picture>
+              </header>
+              <footer>
+                <p class="article__name text-regular--light">
+                  Футболка с полосами
+                </p>
+                <div class="article__ratings">
+                  <div class="ratings__star-wrapper">
+                    <svg class="ratings__star">
+                      <use href="./icons/arrivals-sprite.svg#star"></use>
+                    </svg>
+                    <svg class="ratings__star">
+                      <use href="./icons/arrivals-sprite.svg#star"></use>
+                    </svg>
+                    <svg class="ratings__star">
+                      <use href="./icons/arrivals-sprite.svg#star"></use>
+                    </svg>
+                    <svg class="ratings__star">
+                      <use href="./icons/arrivals-sprite.svg#star"></use>
+                    </svg>
+                    <svg class="ratings__half-a-star">
+                      <use href="./icons/arrivals-sprite.svg#half-a-star"></use>
+                    </svg>
+                  </div>
+                  <p class="ratings__num text-mini--mini">
+                    4.5/<span class="ratings__num--novisible">5</span>
+                  </p>
+                </div>
+                <div class="article__price">
+                  <p class="text-regular--regular article__dscount-price">
+                    ₽6000 <span class="discount-prise op-04">₽8000</span>
+                    <span class="discount-percentage">-30%</span>
+                  </p>
+                </div>
+              </footer>
+            </article>
+          </div>
+          <a class="arrivals__button" href="#">Посмотреть всё</a>
+        </div>
+      </section>
+      <section id="discounts" class="section arrivals">
+        <div class="container leaders__container">
+          <h2 class="arrivals__title title-lg">ЛИДЕРЫ ПРОДАЖ</h2>
+          <div class="arrivals__cards">
+            <article class="arrivals__article">
+              <header class="article__header">
+                <picture>
+                  <source srcset="./images/arrivals-5.avif" type="image/avif" />
+                  <img
+                    src="./images/arrivals-5.png"
+                    width="295"
+                    height="298"
+                    class="article__img"
+                    alt="Рубашка в полоску"
+                  />
+                </picture>
+              </header>
+              <footer>
+                <p class="article__name text-regular--light">
+                  Рубашка в полоску
+                </p>
+                <div class="article__ratings">
+                  <div class="ratings__star-wrapper">
+                    <svg class="ratings__star">
+                      <use href="./icons/arrivals-sprite.svg#star"></use>
+                    </svg>
+                    <svg class="ratings__star">
+                      <use href="./icons/arrivals-sprite.svg#star"></use>
+                    </svg>
+                    <svg class="ratings__star">
+                      <use href="./icons/arrivals-sprite.svg#star"></use>
+                    </svg>
+                    <svg class="ratings__star">
+                      <use href="./icons/arrivals-sprite.svg#star"></use>
+                    </svg>
+                    <svg class="ratings__star">
+                      <use href="./icons/arrivals-sprite.svg#star"></use>
+                    </svg>
+                  </div>
+                  <p class="ratings__num text-mini--mini">
+                    5.0/<span class="ratings__num--novisible">5</span>
+                  </p>
+                </div>
+                <div class="article__price">
+                  <p class="text-regular--regular article__dscount-price">
+                    ₽5000 <span class="discount-prise op-04">₽6000</span>
+                    <span class="discount-percentage">-20%</span>
+                  </p>
+                </div>
+              </footer>
+            </article>
+            <article class="arrivals__article">
+              <header class="article__header">
+                <picture>
+                  <source srcset="./images/arrivals-6.avif" type="image/avif" />
+                  <img
+                    src="./images/arrivals-6.png"
+                    width="295"
+                    height="298"
+                    class="article__img"
+                    alt="Футболка «Courage»"
+                  />
+                </picture>
+              </header>
+              <footer>
+                <p class="article__name text-regular--light">
+                  Футболка «Courage»
+                </p>
+                <div class="article__ratings">
+                  <div class="ratings__star-wrapper">
+                    <svg class="ratings__star">
+                      <use href="./icons/arrivals-sprite.svg#star"></use>
+                    </svg>
+                    <svg class="ratings__star">
+                      <use href="./icons/arrivals-sprite.svg#star"></use>
+                    </svg>
+                    <svg class="ratings__star">
+                      <use href="./icons/arrivals-sprite.svg#star"></use>
+                    </svg>
+                    <svg class="ratings__star">
+                      <use href="./icons/arrivals-sprite.svg#star"></use>
+                    </svg>
+                  </div>
+                  <p class="ratings__num text-mini--mini">
+                    4.0/<span class="ratings__num--novisible">5</span>
+                  </p>
+                </div>
+                <div class="article__price">
+                  <p class="text-regular--regular">₽5000</p>
+                </div>
+              </footer>
+            </article>
+            <article class="arrivals__article arrivals__article--3">
+              <header class="article__header">
+                <picture>
+                  <source srcset="./images/arrivals-7.avif" type="image/avif" />
+                  <img
+                    src="./images/arrivals-7.png"
+                    width="295"
+                    height="298"
+                    class="article__img"
+                    alt="Свободные бермуды"
+                  />
+                </picture>
+              </header>
+              <footer class="article__footer">
+                <p class="article__name text-regular--light">
+                  Свободные бермуды
+                </p>
+                <div class="article__ratings">
+                  <div class="ratings__star-wrapper">
+                    <svg class="ratings__star">
+                      <use href="./icons/arrivals-sprite.svg#star"></use>
+                    </svg>
+                    <svg class="ratings__star">
+                      <use href="./icons/arrivals-sprite.svg#star"></use>
+                    </svg>
+                    <svg class="ratings__star">
+                      <use href="./icons/arrivals-sprite.svg#star"></use>
+                    </svg>
+                  </div>
+                  <p class="ratings__num text-mini--mini">
+                    3.0/<span class="ratings__num--novisible">5</span>
+                  </p>
+                </div>
+                <div class="article__price">
+                  <p class="text-regular--regular">₽4000</p>
+                </div>
+              </footer>
+            </article>
+            <article class="arrivals__article arrivals__article--4">
+              <header class="article__header">
+                <picture>
+                  <source srcset="./images/arrivals-8.avif" type="image/avif" />
+                  <img
+                    src="./images/arrivals-8.png"
+                    width="295"
+                    height="298"
+                    class="article__img"
+                    alt="Потертые узкие джинсы"
+                  />
+                </picture>
+              </header>
+              <footer>
+                <p class="article__name text-regular--light">
+                  Потертые узкие джинсы
+                </p>
+                <div class="article__ratings">
+                  <div class="ratings__star-wrapper">
+                    <svg class="ratings__star">
+                      <use href="./icons/arrivals-sprite.svg#star"></use>
+                    </svg>
+                    <svg class="ratings__star">
+                      <use href="./icons/arrivals-sprite.svg#star"></use>
+                    </svg>
+                    <svg class="ratings__star">
+                      <use href="./icons/arrivals-sprite.svg#star"></use>
+                    </svg>
+                    <svg class="ratings__star">
+                      <use href="./icons/arrivals-sprite.svg#star"></use>
+                    </svg>
+                    <svg class="ratings__half-a-star">
+                      <use href="./icons/arrivals-sprite.svg#half-a-star"></use>
+                    </svg>
+                  </div>
+                  <p class="ratings__num text-mini--mini">
+                    4.5/<span class="ratings__num--novisible">5</span>
+                  </p>
+                </div>
+                <div class="article__price">
+                  <p class="text-regular--regular">₽7000</p>
+                </div>
+              </footer>
+            </article>
+          </div>
+          <a class="arrivals__button" href="#">Посмотреть всё</a>
+        </div>
+      </section>
+      <section class="your-style section">
+        <div class="your-style__container container">
+          <h2 class="your-style__title title-lg">ВЫБЕРИ СВОЙ СТИЛЬ</h2>
+          <div class="your-style__styles-wrapper">
+            <article class="your-style__article your-style__article-grid--1">
+              <a href="#" class="your-style__article-link">
+                <h3 class="your-style__link-title text-regular--bolt">Свободный</h3>
+                <picture class="your-style__img-wrapper">
+                  <source
+                      media="(min-width: 1024px)"
+                      srcset="
+                        ./images/your-style/your-style__styles-imag-1.avif
+                      "
+                      type="image/avif"
+                    />
+                    <source
+                      media="(min-width: 1024px)"
+                      srcset="./images/your-style/your-style__styles-imag-1.png"
+                      type="image/png"
+                    />
+                    <source
+                      srcset="
+                        ./images/your-style/your-style__styles-imag-5.avif
+                      "
+                      type="image/avif"
+                    />
+                    <img
+                      class="your-style__img"
+                      src="./images/your-style/your-style__styles-imag-5.png"
+                      width="407"
+                      height="289"
+                      alt=""
+                    />
+                </picture>
+              </a>
+            </article>
+            <article class="your-style__article your-style__article-grid--2">
+              <a href="#" class="your-style__article-link">
+                <h3 class="your-style__link-title text-regular--bolt">Формальный</h3>
+                <div class="your-style__img-wrapper">
+                  <picture>
+                    <source
+                      media="(min-width: 1024px)"
+                      srcset="
+                        ./images/your-style/your-style__styles-imag-2.avif
+                      "
+                      type="image/avif"
+                    />
+                    <source
+                      media="(min-width: 1024px)"
+                      srcset="./images/your-style/your-style__styles-imag-2.png"
+                      type="image/png"
+                    />
+                    <source
+                      srcset="
+                        ./images/your-style/your-style__styles-imag-6.avif
+                      "
+                      type="image/avif"
+                    />
+                    <img
+                      class="your-style__img"
+                      src="./images/your-style/your-style__styles-imag-6.png"
+                      width="560"
+                      height="289"
+                      alt=""
+                    />
+                  </picture>
+                </div>
+              </a>
+            </article>
+            <article class="your-style__article your-style__article-grid--3">
+              <a href="#" class="your-style__article-link">
+                <h3 class="your-style__link-title text-regular--bolt">Вечерний</h3>
+                <div class="your-style__img-wrapper">
+                  <picture>
+                    <source
+                      media="(min-width: 1024px)"
+                      srcset="
+                        ./images/your-style/your-style__styles-imag-3.avif
+                      "
+                      type="image/avif"
+                    />
+                    <source
+                      media="(min-width: 1024px)"
+                      srcset="./images/your-style/your-style__styles-imag-3.png"
+                      type="image/png"
+                    />
+                    <source
+                      srcset="
+                        ./images/your-style/your-style__styles-imag-7.avif
+                      "
+                      type="image/avif"
+                    />
+                    <img
+                      class="your-style__img"
+                      src="./images/your-style/your-style__styles-imag-7.png"
+                      width="560"
+                      height="289"
+                      alt=""
+                    />
+                  </picture>
+                </div>
+              </a>
+            </article>
+            <article class="your-style__article your-style__article-grid--4">
+              <a href="#" class="your-style__article-link">
+                <h3 class="your-style__link-title text-regular--bolt">Спорт</h3>
+                <div class="your-style__img-wrapper">
+                  <picture>
+                    <source
+                      media="(min-width: 1024px)"
+                      srcset="
+                        ./images/your-style/your-style__styles-imag-4.avif
+                      "
+                      type="image/avif"
+                    />
+                    <source
+                      media="(min-width: 1024px)"
+                      srcset="./images/your-style/your-style__styles-imag-4.png"
+                      type="image/png"
+                    />
+                    <source
+                      srcset="
+                        ./images/your-style/your-style__styles-imag-8.avif
+                      "
+                      type="image/avif"
+                    />
+                    <img
+                      class="your-style__img"
+                      src="./images/your-style/your-style__styles-imag-8.png"
+                      width="407"
+                      height="289"
+                      alt=""
+                    />
+                  </picture>
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

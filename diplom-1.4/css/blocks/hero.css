@@ -1,0 +1,278 @@
+.hero {
+  z-index: var(--layer-1);
+  padding-inline: clamp(0.313rem, -2.125rem + 8.67vw, 4.375rem);
+  position: relative;
+  max-width: 1440px;
+  display: flex;
+  background-color: var(--bg-hero-color);
+}
+
+@media (width > 1024px) {
+  .hero {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (width <=1024px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.hero-container {
+  position: relative;
+  padding-top: 10px;
+  flex-shrink: 0;
+}
+
+@media (width <=1024px) {
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.hero__image-wrapper {
+  z-index: var(--layer-negative);
+  max-width: 620px;
+}
+
+@media (width>=768px) {
+  .hero__img--pc {
+    min-width: 850px;
+  }
+}
+
+@media (width>1238px) {
+  .hero__title {
+    margin-bottom: 20px;
+    max-width: 600px;
+    /* 1238px 1450px */
+    padding-top: 80px;
+  }
+}
+
+@media (width<=1238px) {
+  .hero__title {
+    margin-bottom: 24px;
+    max-width: 525px;
+  }
+}
+
+@media (width<=768px) {
+  .hero__title {
+    margin-bottom: 24px;
+    max-width: 430px;
+  }
+}
+
+@media (width<=632px) {
+  .hero__title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+@media (width>=1238px) {
+  .hero__text {
+    margin-bottom: 24px;
+    max-width: 551px;
+  }
+}
+
+@media (width<=1238px) {
+  .hero__text {
+    margin-bottom: 32px;
+    max-width: 444px;
+  }
+}
+
+@media (width<=768px) {
+  .hero__text {
+    /* 632px 768px */
+    margin-bottom: clamp(13px, -9.471rem + 26.24vw, 50px);
+    max-width: 430px;
+  }
+}
+
+@media (width<=632px) {
+  .hero__text {
+    margin-bottom: 23px;
+    max-width: 360px;
+    text-align: center;
+  }
+}
+
+.hero__button {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--main-color);
+  background-color: var(--accent-color);
+  border-radius: 62px;
+  padding: 16px 54px;
+
+  cursor: pointer;
+  transition: color var(--transition-time);
+  position: relative;
+}
+
+@media (any-hover: hover) {
+  .hero__button:hover {
+    color: var(--second-link-color);
+  }
+}
+
+@media (width > 1300px) {
+  .hero__button {
+    margin-bottom: 100px;
+  }
+}
+
+@media (width <=1300px) {
+  .hero__button {
+    margin-bottom: 50px;
+  }
+}
+
+@media (width >1024px) {
+  .hero__button {
+    max-width: 224px;
+  }
+}
+
+@media (width <=1024px) {
+  .hero__button {
+    margin-bottom: 75px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.hero__list {
+  display: flex;
+  align-items: center;
+}
+
+.list__text {
+  font-weight: 400;
+  line-height: 180%;
+  color: var(--hero-list-color);
+}
+
+.hero__item {
+  display: inline-block;
+}
+
+.item__border {
+  display: inline-block;
+  border-left: 2px solid var(--accent-color);
+  opacity: var(--opacity-01);
+  align-items: center;
+  width: 0;
+}
+
+.item__focus {
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+@media (width > 1165px) {
+  .hero__list {
+    gap: 20px;
+    max-width: 700px;
+  }
+
+  .hero__item {
+    flex-shrink: 0;
+    text-align: start;
+  }
+
+  .hero__item--first {
+    max-width: 162px;
+  }
+
+  .list__text {
+    font-size: 16px;
+  }
+
+  .item__border {
+    height: 74px;
+  }
+
+  .item__focus {
+    font-size: 34px;
+  }
+}
+
+@media (width <=1165px) {
+  .hero__list {
+    gap: 15px;
+    max-width: 700px;
+  }
+
+  .hero__item {
+    flex-shrink: 0;
+    text-align: start;
+  }
+
+  .hero__item--first {
+    max-width: 162px;
+  }
+
+  .list__text {
+    font-size: 14px;
+  }
+
+  .item__border {
+    height: 50px;
+  }
+
+  .item__focus {
+    font-size: 28px;
+  }
+}
+
+@media (width<=768px) {
+    .hero__list {
+    max-width: 444px;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+        /* 632px 768px */
+    margin: clamp(23px, -6.066rem + 19.15vw, 50px) auto;
+  }
+
+    .hero__item {
+    max-width: 136px;
+    font-size: 12px;
+    line-height: 183%;
+  }
+
+  .hero__item--first {
+    max-width: 122px;
+  }
+
+  .item__border {
+    height: 52px;
+  }
+
+  .item__focus {
+    font-size: 24px;
+  }
+}
+
+@media (width<=632px) {
+  .hero__list {
+    max-width: 322px;
+  }
+
+  .item__border--last {
+    display: none;
+  }
+}

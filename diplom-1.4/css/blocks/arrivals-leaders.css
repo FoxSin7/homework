@@ -1,0 +1,125 @@
+.arrivals {
+  visibility: visible;
+}
+
+.arrivals__container {
+  padding-bottom: 64px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.arrivals__title {
+  margin-bottom: 55px;
+}
+
+.arrivals__cards {
+  display: flex;
+  overflow: hidden;
+  /* 1012px 1440px */
+  justify-content: center;
+  flex-wrap: wrap;
+  /* 1440px 632px */
+  gap: clamp(8px, -0.087rem + 1.49vw, 20px);
+  margin-bottom: 36px;
+}
+
+
+
+@media (width<=1043px){
+    .arrivals__article--4{
+    display: none;
+  }
+}
+
+@media (width<=638px) {
+  .arrivals__article--3{
+    display: none;
+  }
+}
+
+.arrivals__article {
+  /* 1440px 375px */
+  width: clamp(168px, 7.881rem + 11.17vw, 278px);
+}
+
+.article__header {
+  /* 1440 632 */
+  margin-bottom: clamp(11px, 0.443rem + 0.62vw, 16px);-
+}
+
+.article__img {
+  border-radius: 20px;
+}
+
+.article__name {
+  /* 1440 632 */
+  margin-bottom: clamp(4px, 0.054rem + 0.5vw, 8px);
+}
+
+.article__ratings {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  /* 1440 632 */
+  margin-bottom: clamp(4px, 0.054rem + 0.5vw, 8px);
+}
+
+.ratings__star-wrapper {
+  display: flex;
+  /* 1440px 632px */
+  gap: clamp(4.4px, 0.246rem + 0.07vw, 5px);
+}
+
+.ratings__star {
+  width: clamp(15px, 0.791rem + 0.37vw, 18px);
+  height: clamp(14px, 0.728rem + 0.37vw, 17px);
+}
+
+.ratings__num {
+  display: inline;
+}
+
+.ratings__half-a-star {
+  width: clamp(6px, 0.228rem + 0.37vw, 9px);
+  height: clamp(14px, 0.728rem + 0.37vw, 17px);
+}
+
+.article__price{
+  height: 24px;
+  align-content: center;
+}
+
+.article__dscount-price {
+  display: flex;
+  max-height: 24px;
+  align-items: center;
+  /* 1440px 632px */
+  gap: clamp(5px, 0.068rem + 0.62vw, 10px);
+}
+
+.discount-prise {
+  text-decoration: line-through;
+}
+
+.discount-percentage {
+  display: inline;
+  font-weight: 500;
+  font-size: 12px;
+  border-radius: 62px;
+  padding: 6px clamp(0.438rem, 0.283rem + 0.66vw, 0.875rem);
+  background-color: var(--bg-discount-procent-color);
+  color: var(--discount-procent-color);
+}
+
+
+.arrivals__button {
+  display: block;
+  max-width: 218px;
+  margin: 0 auto;
+  font-weight: 500;
+  /* 1440px 632px */
+  font-size: clamp(14px, 0.777rem + 0.25vw, 16px);
+  color: var(--accent-color);
+  border: 1px solid var(--border-color);
+  border-radius: 62px;
+  padding: 14px 42px;
+}
