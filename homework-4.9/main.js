@@ -3,7 +3,7 @@ const firstName = "Серёжка";
 const lastName = "Лис";
 const isStudent = Boolean(true);
 
-// console.log(typeof isStudent);
+ console.log(typeof isStudent);
 
 // Задача 2
 
@@ -11,13 +11,13 @@ const age = 19;
 const currentYear = 2026;
 const birthYear = currentYear - age;
 
-// console.log(birthYear);
+ console.log(birthYear);
 
 // Задача 3
 
 let messange = `Меня зовут ${firstName} ${lastName}, мне ${age} лет. Я ученик курса: ${isStudent}`;
 
-// console.log(messange);
+ console.log(messange);
 
 // задача 4
 
@@ -31,4 +31,4 @@ let d = Boolean(0);
 let e = Boolean(" ");
 let result = a + b + c + d + e;
 
-// console.log(result);
+ console.log(result);
